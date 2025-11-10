@@ -7,7 +7,304 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>test</h1>
-<script type="module" src="script.js"></script>
+<div class="bg-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+
+<header>
+    <div class="container">
+        <nav class="glass">
+            <div class="logo" onclick="showPage('home')">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                        <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                        <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                        <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                        <circle cx="24" cy="8" r="2" opacity="1"/>
+                        <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                        <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                        <circle cx="24" cy="40" r="2" opacity="1"/>
+                    </svg>
+                </div>
+                <span>Malo Kerautret</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="showPage('home')" class="active">Accueil</a>
+                <a href="#" onclick="showPage('formation')">Formation</a>
+                <a href="#" onclick="showPage('experience')">Expérience</a>
+                <a href="#" onclick="showPage('competences')">Compétences</a>
+                <a href="#" onclick="showPage('contact')">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- HOME PAGE -->
+<div id="home" class="page active">
+    <div class="container">
+        <section class="hero glass">
+            <h1>Malo Kerautret</h1>
+            <p class="hero-subtitle">Étudiant Ingénieur Informatique - Spécialisation IA</p>
+            <p>En formation ingénieur informatique full stack, je recherche un stage pour approfondir mes compétences en conception et développement. Mon objectif est de progresser au contact de professionnels tout en apportant mon enthousiasme et ma créativité.</p>
+            <div class="contact-info">
+                <div class="contact-item">Email: kerautretmalo@gmail.com</div>
+                <div class="contact-item">Tel: +33 6 31 40 66 16</div>
+                <div class="contact-item">Localisation: Angers</div>
+            </div>
+            <div style="margin-top: 30px;">
+                <a href="#" class="cta-button" onclick="showPage('contact')">Me contacter</a>
+            </div>
+        </section>
+
+        <div class="features">
+            <div class="feature-card glass">
+                <h3>Formation</h3>
+                <p>4ème année en école d'ingénieur ESAIP avec une spécialisation en Intelligence Artificielle</p>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Développement Full Stack</h3>
+                <p>Compétences en développement web et applications</p>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Expérience internationale</h3>
+                <p>Semestre ERASMUS à Budapest, Hongrie</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FORMATION PAGE -->
+<div id="formation" class="page">
+    <div class="container">
+        <section class="hero glass">
+            <h1>Formation</h1>
+            <p>Mon parcours académique et mes expériences d'apprentissage</p>
+        </section>
+
+        <div class="glass" style="margin-top: 30px; padding: 40px;">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>ESAIP École d'Ingénieur, Angers</h3>
+                    <p class="date">2024 - 2027</p>
+                    <p>Étudiant 4ème année de cycle ingénieur - Spécialisation Intelligence Artificielle</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Gábor Dénes Université, Budapest, Hongrie</h3>
+                    <p class="date">2025</p>
+                    <p>Semestre ERASMUS - 3ème année de cycle ingénieur</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>CESI École d'Ingénieur, Saint-Nazaire</h3>
+                    <p class="date">2021 - 2023</p>
+                    <p>Classe préparatoire aux grandes écoles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- EXPERIENCE PAGE -->
+<div id="experience" class="page">
+    <div class="container">
+        <section class="hero glass">
+            <h1>Expérience Professionnelle</h1>
+            <p>Mes stages et emplois qui ont façonné mes compétences</p>
+        </section>
+
+        <div class="features">
+            <div class="feature-card glass">
+                <h3>Stage Support IT interne</h3>
+                <p><strong>Valeuriad, Nantes</strong><br>Avril 2023 – Juillet 2023</p>
+                <ul>
+                    <li>Gestion de tickets</li>
+                    <li>Maintenance et gestion du parc informatique</li>
+                    <li>Recherche de solution de déploiement Windows</li>
+                </ul>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Stage Développement Web</h3>
+                <p><strong>Terrena, Ancenis</strong><br>Avril 2022 – Juillet 2022</p>
+                <ul>
+                    <li>Développement d'un site web interne</li>
+                    <li>Développement d'application C#</li>
+                </ul>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Agent d'accueil de déchèterie</h3>
+                <p><strong>Angers Loire Métropole, Angers</strong><br>Juin 2021 – Août 2021</p>
+                <ul>
+                    <li>Tri des déchets</li>
+                    <li>Accueil et relation avec les usagers</li>
+                </ul>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Employé polyvalent snack-bar</h3>
+                <p><strong>Camping l'Atlantique, Fouesnant</strong></p>
+                <ul>
+                    <li>Respect des normes d'hygiène et travail d'équipe</li>
+                    <li>Accueil et service client</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="hero glass" style="margin-top: 50px;">
+            <h2>Bénévolat</h2>
+            <div class="features" style="margin-top: 30px;">
+                <div class="feature-card glass">
+                    <h3>Réparation de vélo</h3>
+                    <p>Angers Mob Service - 2025</p>
+                </div>
+                <div class="feature-card glass">
+                    <h3>Aide refonte de CV</h3>
+                    <p>AMJE49 - 2025</p>
+                </div>
+                <div class="feature-card glass">
+                    <h3>Barman en festival</h3>
+                    <p>StudyVibes (2024) - Festidreuz (2023)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- COMPETENCES PAGE -->
+<div id="competences" class="page">
+    <div class="container">
+        <section class="hero glass">
+            <h1>Compétences</h1>
+            <p>Mes compétences techniques et transversales</p>
+        </section>
+
+        <div class="skills-grid">
+            <div class="skill-category glass">
+                <h3>Langages de programmation</h3>
+                <div>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">Arduino</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+
+            <div class="skill-category glass">
+                <h3>Web</h3>
+                <div>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">jQuery</span>
+                </div>
+            </div>
+
+            <div class="skill-category glass">
+                <h3>Bases de données</h3>
+                <div>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">phpMyAdmin</span>
+                </div>
+            </div>
+
+            <div class="skill-category glass">
+                <h3>Outils</h3>
+                <div>
+                    <span class="skill-tag">GIT</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Cisco Packet Tracer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="features" style="margin-top: 40px;">
+            <div class="feature-card glass">
+                <h3>Compétences Transversales</h3>
+                <ul>
+                    <li>Communication verbale</li>
+                    <li>Flexibilité et adaptabilité</li>
+                    <li>Autonomie</li>
+                    <li>Ponctualité</li>
+                </ul>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Langues</h3>
+                <ul>
+                    <li>Français (Langue maternelle)</li>
+                    <li>Anglais - TOEIC</li>
+                </ul>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Centres d'intérêt</h3>
+                <ul>
+                    <li>Water-polo (Club d'Angers 2017-2019)</li>
+                    <li>Natation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="contact" class="page">
+    <div class="container">
+        <section class="hero glass">
+            <h1>Me Contacter</h1>
+            <p>N'hésitez pas à me contacter pour toute opportunité de stage ou de collaboration</p>
+        </section>
+
+        <div class="features">
+            <div class="feature-card glass">
+                <h3>Email</h3>
+                <p><a href="mailto:kerautretmalo@gmail.com" style="color: white; text-decoration: none;">kerautretmalo@gmail.com</a></p>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Téléphone</h3>
+                <p><a href="tel:+33631406616" style="color: white; text-decoration: none;">+33 6 31 40 66 16</a></p>
+            </div>
+
+            <div class="feature-card glass">
+                <h3>Localisation</h3>
+                <p>Angers, France</p>
+            </div>
+        </div>
+
+        <div class="glass" style="margin-top: 40px; padding: 40px; text-align: center;">
+            <h2 style="color: white; margin-bottom: 20px;">GitHub</h2>
+            <a style="color: rgba(255, 255, 255, 0.9); font-size: 1.2em;"
+               target="_blank" href="https://github.com/LaGardeuh">Lien vers mon GitHub</a>
+
+            <img src="image/qrcode_github.com.png"
+                 style="max-width: 150px; width: 100%; height: auto; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;"
+                 alt="">
+<!--            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.2em; margin-top: 10px;"><strong>À partir de Mai 2026</strong></p>-->
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <footer class="glass">
+            <p>&copy; 2025 Malo Kerautret. Tous droits réservés.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Étudiant ingénieur informatique - ESAIP Angers</p>
+        </footer>
+    </div>
+</div>
 </body>
 </html>
+
+<script type="text/javascript" src="script.js"></script>
